@@ -10,7 +10,7 @@ from gemini_key_rotator import GeminiGenerator
 
 async def main():
     generator = GeminiGenerator(
-        model_name="gemini-2.0-flash-exp",
+        model_name="gemini-2.5-flash",
         api_keys=["key1", "key2", "key3"],
         workers_per_key=4,  # 4 workers per key = 12 total slots
         rate_limit_per_slot=12,  # 12 seconds between requests per slot
@@ -30,7 +30,7 @@ asyncio.run(main())
 ## 📦 Installation
 
 ```bash
-pip install -r requirements.txt
+pip install git+https://github.com/galkin-v/gemini_key_rotator.git
 ```
 
 ## ✨ Features
