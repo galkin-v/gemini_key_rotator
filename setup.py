@@ -17,7 +17,7 @@ if requirements_file.exists():
 
 setup(
     name="gemini-key-rotator",
-    version="2.0.1",
+    version="2.0.2",
     author="Vladimir",
     description="High-performance async library with worker-pool architecture and per-slot rate limiting for Google Gemini API",
     long_description=long_description,
@@ -36,8 +36,10 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
     ],
-    python_requires=">=3.8",
+    python_requires=">=3.11",
     install_requires=requirements,
     keywords="google gemini api key-rotation async rate-limiting",
     project_urls={
